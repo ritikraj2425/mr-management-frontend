@@ -65,7 +65,7 @@ export function MembersList({ members, isAdmin }: { members: Member[]; isAdmin: 
                     <DropdownMenuContent align="end">
                       <DropdownMenuLabel>Actions</DropdownMenuLabel>
                       <DropdownMenuSeparator />
-                      <DropdownMenuItem>Edit Role</DropdownMenuItem>
+                      <DropdownMenuItem>{member.isAdmin ? "Remove from admin" : "Make admin"}</DropdownMenuItem>
                       <DropdownMenuItem>Remove</DropdownMenuItem>
                     </DropdownMenuContent>
                   </DropdownMenu>
